@@ -1,11 +1,11 @@
-void printArray(int arr[], int lenght) {
-  for (int i = 0; i < lenght; i++) {
+void printArray(int arr[], int len) {
+  for (int i = 0; i < len; i++) {
     printf("%d ", arr[i]);
   }
   printf("\n");
 }
 
-void insertionSort(int arr[], int lenght) {
+void insertionSort(int arr[], int len) {
   for (int step = 1; step < lenght; step++) {
     int key = arr[step];
     int j = step - 1;
@@ -18,10 +18,10 @@ void insertionSort(int arr[], int lenght) {
   }
 }
 
-int main(int arr[], int lenght) {
+int main(int arr[], int len) {
   int lenght = sizeof(arr) / sizeof(arr[0]);
-  insertionSort(arr, lenght);
+  insertionSort(arr, len);
   printf("The array sorted in an ascending order is:\n");
-  printArray(arr, lenght);
+  printArray(arr, len);
   return;
 }
